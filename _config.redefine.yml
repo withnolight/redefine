@@ -1,0 +1,18 @@
+# Redefine theme overrides for this site.
+
+info:
+  title: Hexo
+  subtitle: ''
+  author: John Doe
+  url: http://example.com
+
+home_banner:
+  title: Hexo
+  subtitle:
+    text:
+      - 欢迎来到本站
+
+comment:
+  config:
+    giscus:
+      lang: zh-CN
