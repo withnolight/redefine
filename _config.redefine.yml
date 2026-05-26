@@ -16,3 +16,6 @@ comment:
   config:
     giscus:
       lang: zh-CN
+
+footer:
+  start: 2026/05/26 01:00:00
