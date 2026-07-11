@@ -1,16 +1,45 @@
 # Redefine theme overrides for this site.
 
 info:
-  title: Hexo
-  subtitle: ''
-  author: John Doe
-  url: http://example.com
+  title: 三相共存点
+  subtitle: 'Identity'
+  author: Haskina
+  url: https://idsmile.top/
+
+defaults:
+  avatar: /image/avatar.webp
+
+global:
+  website_counter:
+    url: https://cn.vercount.one/js
+    enable: true
+    site_pv: true
+    site_uv: true
+    post_pv: true
 
 home_banner:
-  title: Hexo
+  title: 但在此山中，云深不知处
   subtitle:
     text:
       - 欢迎来到本站
+
+navbar:
+  links:
+    Home:
+      path: /
+      icon: fa-regular fa-house
+    About:
+      path: /about/
+      icon: fa-regular fa-user
+    Friends:
+      path: /friends/
+      icon: fa-regular fa-link
+    碎碎念:
+      path: /shuoshuo/
+      icon: fa-regular fa-comment-dots
+    留言板:
+      path: /comments/
+      icon: fa-regular fa-message
 
 comment:
   config:

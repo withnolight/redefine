@@ -26,6 +26,7 @@ _multiconfig.yml
 
 # Editor and OS files
 .DS_Store
+.directory
 Thumbs.db
 .vscode/
 .idea/

@@ -6,6 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "essay": "node tools/new-essay.js",
     "server": "hexo server"
   },
   "hexo": {
