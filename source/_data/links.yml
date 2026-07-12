@@ -1,3 +1,7 @@
 - links_category: 友情链接
   has_thumbnail: false
-  list: []
+  list:
+    - name: Valproate
+      link: https://lingyu061126.github.io/
+      description: 一名普通的人类观察员
+      avatar: https://lingyu061126.github.io/images/Image_165853659272824.jpg

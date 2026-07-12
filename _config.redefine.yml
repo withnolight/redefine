@@ -28,18 +28,18 @@ navbar:
     Home:
       path: /
       icon: fa-regular fa-house
-    About:
-      path: /about/
-      icon: fa-regular fa-user
-    Friends:
-      path: /friends/
-      icon: fa-regular fa-link
+    归档:
+      path: /archives/
+      icon: fa-regular fa-archive
     碎碎念:
       path: /shuoshuo/
       icon: fa-regular fa-comment-dots
     留言板:
       path: /comments/
       icon: fa-regular fa-message
+    关于:
+      path: /about/
+      icon: fa-regular fa-user
 
 comment:
   config:
