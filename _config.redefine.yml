@@ -37,6 +37,9 @@ navbar:
     留言板:
       path: /comments/
       icon: fa-regular fa-message
+    友链:
+      path: /friends/
+      icon: fa-regular fa-link
     关于:
       path: /about/
       icon: fa-regular fa-user
@@ -48,3 +51,6 @@ comment:
 
 footer:
   start: 2026/05/26 01:00:00
+
+page_templates:
+  friends_column: 3
