@@ -1,0 +1,281 @@
+.page-template-content .about-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
+  margin: 0 0 2.25rem;
+  padding: 1.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--second-background-color), var(--background-color));
+  box-shadow: var(--redefine-box-shadow-flat);
+}
+
+.page-template-content .about-hero::after {
+  position: absolute;
+  z-index: 0;
+  top: -5rem;
+  right: -4rem;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+  content: "";
+  opacity: 0.1;
+}
+
+.page-template-content .about-hero__avatar,
+.page-template-content .about-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.page-template-content .about-hero__avatar {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0 !important;
+  padding: 0;
+  border: 4px solid var(--background-color);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--redefine-box-shadow);
+}
+
+.page-template-content .about-hero__content h2 {
+  margin: 0.25rem 0 0.65rem;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.55rem, 4vw, 2.2rem);
+  line-height: 1.2;
+}
+
+.page-template-content .about-hero__content p {
+  margin: 0;
+  color: var(--second-text-color);
+}
+
+.page-template-content .about-hero__eyebrow {
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.page-template-content .about-hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.page-template-content .about-hero__tags span {
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--background-color-transparent-40);
+  color: var(--second-text-color);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.page-template-content .about-fact-grid {
+  align-items: stretch;
+  margin: 1.5rem 0 2.25rem;
+}
+
+.page-template-content .about-fact-grid > .callout {
+  height: 100%;
+  margin: 0;
+}
+
+.page-template-content .about-fact-grid .callout__content p {
+  line-height: 1.75;
+}
+
+.page-template-content .about-game-table-wrap {
+  overflow-x: auto;
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--background-color);
+  box-shadow: var(--redefine-box-shadow-flat);
+}
+
+.page-template-content .about-game-table {
+  width: 100%;
+  min-width: 34rem;
+  margin: 0 !important;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: transparent;
+}
+
+.page-template-content .about-game-table th,
+.page-template-content .about-game-table td {
+  padding: 0.9rem 1.1rem;
+  border: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.page-template-content .about-game-table th {
+  background: var(--third-background-color);
+  color: var(--second-text-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.page-template-content .about-game-table tbody tr {
+  --game-accent: var(--primary-color);
+  border-top: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.page-template-content .about-game-table tbody tr:nth-child(1) {
+  --game-accent: #e44b8d;
+}
+
+.page-template-content .about-game-table tbody tr:nth-child(2) {
+  --game-accent: #ffa940;
+}
+
+.page-template-content .about-game-table tbody tr:nth-child(3) {
+  --game-accent: #47da55;
+}
+
+.page-template-content .about-game-table tbody tr:nth-child(4) {
+  --game-accent: #2fd6f0;
+}
+
+.page-template-content .about-game-table tbody tr:nth-child(5) {
+  --game-accent: #a763ff;
+}
+
+.page-template-content .about-game-table tbody tr:hover {
+  background: var(--second-background-color);
+}
+
+.page-template-content .about-game-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--first-text-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.page-template-content .about-game-name::before {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--game-accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--game-accent) 14%, transparent);
+  content: "";
+}
+
+.page-template-content .about-score-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.page-template-content .about-score-list span {
+  display: inline-flex;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--game-accent) 32%, var(--border-color));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--game-accent) 9%, var(--background-color));
+  color: var(--first-text-color);
+  font-family: "Geist Mono", monospace;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.page-template-content .about-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.page-template-content .about-contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--second-background-color);
+  color: var(--default-text-color);
+  box-shadow: var(--redefine-box-shadow-flat);
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+a.about-contact-card:hover {
+  background: var(--background-color);
+  box-shadow: var(--redefine-box-shadow);
+  transform: translateY(-2px);
+}
+
+.page-template-content .about-contact-card > i {
+  flex: 0 0 auto;
+  width: 2rem;
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.page-template-content .about-contact-card > span {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.page-template-content .about-contact-card strong {
+  color: var(--first-text-color);
+  line-height: 1.3;
+}
+
+.page-template-content .about-contact-card small {
+  overflow: hidden;
+  color: var(--second-text-color);
+  font-size: 0.78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .page-template-content .about-hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.35rem;
+    text-align: center;
+  }
+
+  .page-template-content .about-hero__avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .page-template-content .about-hero__tags {
+    justify-content: center;
+  }
+
+  .page-template-content .about-fact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .page-template-content .about-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

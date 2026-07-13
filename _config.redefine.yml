@@ -21,7 +21,7 @@ home_banner:
   title: 但在此山中，云深不知处
   subtitle:
     text:
-      - 欢迎来到本站
+      - 欢迎来到 Haskina 的博客
 
 navbar:
   links:
@@ -56,6 +56,13 @@ comment:
 
 footer:
   start: 2026/05/26 01:00:00
+
+inject:
+  enable: true
+  head:
+    - '<link rel="stylesheet" href="/css/custom-fonts.css">'
+    - '<link rel="stylesheet" href="/css/about.css">'
+  footer: []
 
 page_templates:
   friends_column: 3
