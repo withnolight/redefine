@@ -50,6 +50,7 @@ comment:
 
   config:
     twikoo:
+      version: 1.6.44
       server_url: https://comment.idsmile.top
       region:
 
