@@ -45,9 +45,13 @@ navbar:
       icon: fa-regular fa-user
 
 comment:
+  enable: true
+  system: twikoo
+
   config:
-    giscus:
-      lang: zh-CN
+    twikoo:
+      server_url: https://comment.idsmile.top
+      region:
 
 footer:
   start: 2026/05/26 01:00:00
