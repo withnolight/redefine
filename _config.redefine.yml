@@ -10,6 +10,12 @@ defaults:
   avatar: /image/avatar.webp
 
 global:
+  open_graph:
+    enable: true
+    image: /image/og-default.png
+    # 留空后，文章优先使用 front matter 中的 description。
+    description: ''
+
   website_counter:
     url: https://cn.vercount.one/js
     enable: true
