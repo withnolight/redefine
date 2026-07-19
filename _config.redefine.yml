@@ -40,6 +40,9 @@ navbar:
     碎碎念:
       path: /shuoshuo/
       icon: fa-regular fa-comment-dots
+    项目:
+      path: /projects/
+      icon: fa-solid fa-flask
     留言板:
       path: /comments/
       icon: fa-regular fa-message
@@ -68,7 +71,9 @@ inject:
   head:
     - '<link rel="stylesheet" href="/css/custom-fonts.css">'
     - '<link rel="stylesheet" href="/css/about.css">'
-  footer: []
+    - '<link rel="stylesheet" href="/css/projects.css">'
+  footer:
+    - '<script src="/js/projects.js"></script>'
 
 page_templates:
   friends_column: 3

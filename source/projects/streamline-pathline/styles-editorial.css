@@ -1,0 +1,74 @@
+:root {
+  --ink: #1f2e2a;
+  --muted: #68766f;
+  --paper: #f4f2eb;
+  --white: #fffefa;
+  --line: #d9ded7;
+  --navy: #132f35;
+  --navy-2: #183c42;
+  --cyan: #45d8cb;
+  --cyan-deep: #167a6b;
+  --orange: #e9754e;
+  --orange-deep: #c95936;
+  --shadow: 0 18px 55px rgba(39, 57, 50, .09);
+}
+
+body {
+  background:
+    radial-gradient(circle at 88% 5%, rgba(22, 122, 107, .07), transparent 25rem),
+    var(--paper);
+  font-family: Inter, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.site-header { width: min(1120px, calc(100% - 48px)); height: 72px; }
+.brand svg { stroke: var(--cyan-deep); }
+.site-header nav { gap: 30px; }
+
+.hero, .concepts { width: min(1080px, calc(100% - 48px)); }
+.hero { padding: 58px 0 54px; }
+.hero-grid { grid-template-columns: 1.5fr .65fr; gap: 70px; margin-top: 20px; }
+h1 { max-width: 760px; font-family: "Iowan Old Style", "Noto Serif SC", "Songti SC", serif; font-size: clamp(48px, 5.7vw, 76px); font-weight: 650; line-height: 1.08; letter-spacing: -.045em; }
+h1 span { color: var(--cyan-deep); }
+h1 span::after { height: 3px; bottom: 0; background: var(--orange); }
+.hero-copy { margin-top: 25px; font-size: 16px; line-height: 1.85; }
+.aside-number { border-color: #b9c9c1; border-radius: 5px; }
+
+.lab-shell { width: min(1180px, calc(100% - 32px)); padding: 28px; border-radius: 24px; border-color: #dfe4dd; background: var(--white); box-shadow: var(--shadow); }
+.lab-heading h2, .concept-heading h2 { font-family: "Iowan Old Style", "Noto Serif SC", "Songti SC", serif; font-size: 28px; font-weight: 650; }
+.control-bar { border-radius: 14px; background: #eef2ed; border-color: #dde5df; }
+.segmented { border-radius: 10px; background: #dfe8e1; }
+.mode-button { border-radius: 7px; }
+.mode-button.active { color: var(--cyan-deep); }
+.icon-button, .play-button { border-radius: 10px; }
+.play-button { background: var(--cyan-deep); }
+.play-button:hover { background: #0e6559; }
+.insight-banner { border: 1px solid #cde6de; border-left-width: 3px; border-radius: 9px; background: #edf8f4; }
+
+.visual-grid { gap: 18px; margin-top: 18px; }
+.visual-panel { border-radius: 16px; border-color: #dce4df; box-shadow: 0 8px 24px rgba(37, 63, 53, .05); }
+.visual-panel > header { height: 68px; }
+.panel-index { border-radius: 9px; }
+.canvas-wrap { height: 350px; }
+.visual-panel > footer { background: #fafbf8; }
+.lab-legend { padding-top: 16px; }
+
+.concepts { padding: 86px 0 88px; }
+.concept-heading { padding-bottom: 30px; }
+.question-grid { grid-template-columns: 1fr 46px 1fr; }
+.question-card { min-height: 300px; padding: 34px 36px 30px; border: 1px solid var(--line); border-top-width: 3px; border-radius: 16px; box-shadow: 0 10px 30px rgba(39, 57, 50, .05); }
+.question-card h3 { font-family: "Iowan Old Style", "Noto Serif SC", "Songti SC", serif; font-weight: 650; }
+.question-icon { width: 50px; height: 50px; border-radius: 12px; }
+.formula { border-radius: 8px; }
+.versus span { box-shadow: 0 0 0 6px var(--paper); }
+.comparison-table { overflow: hidden; border-radius: 14px; }
+.table-head { background: #203d38; }
+.takeaway { border-radius: 14px; background: #203d38; }
+.takeaway-mark { background: #75dfc9; }
+.takeaway button { border-radius: 8px; }
+
+.style-preview button.active { background: var(--cyan-deep); }
+
+@media (max-width: 720px) {
+  .lab-shell { border-radius: 16px; }
+  .question-card { border-radius: 12px; }
+}
