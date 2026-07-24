@@ -5,9 +5,10 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
+    "deploy": "npm run build && wrangler deploy",
     "essay": "node tools/new-essay.js",
-    "server": "hexo server"
+    "server": "hexo server",
+    "preview": "npm run build && wrangler dev"
   },
   "hexo": {
     "version": "8.1.2"
@@ -24,5 +25,8 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-redefine": "git+https://github.com/withnolight/hexo-theme-redefine.git#main"
+  },
+  "devDependencies": {
+    "wrangler": "^4.114.0"
   }
 }
